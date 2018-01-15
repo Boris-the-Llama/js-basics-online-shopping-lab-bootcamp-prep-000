@@ -56,6 +56,17 @@ function viewCart() {
     }
   }
 
+function total() {
+ var value = [];
+ +  var total = 0
+ +  for (var i = 0; i < cart.length; i++){
+ +    value.push(getValues(cart[i]))
+ +  }
+ +  for (var index = 0; index < value.length; index++){
+ +    total += value[index]
+ +  }
+ +  return total
+  }		  }
 
 
 function removeFromCart(item) {
