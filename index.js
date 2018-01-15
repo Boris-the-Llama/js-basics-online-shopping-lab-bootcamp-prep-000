@@ -57,6 +57,11 @@ function viewCart() {
   }
 
 function total() {
+ function getValues(obj) {
+ var arr = Object.keys(obj).join("")
+ var value = obj[arr]
+  return value
+  		  }
  var value = [];
  var total = 0
  for (var i = 0; i < cart.length; i++){
